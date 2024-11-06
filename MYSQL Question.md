@@ -304,7 +304,7 @@ operators.
 
 **60. **
 
-## Ater:- commend is used to add, modify or drop columns in an existing table.
+## Alter:- commend is used to add, modify or drop columns in an existing table.
 
 **60. How do you add a new column named country of type varchar(50) to the langauege table ?**
 
