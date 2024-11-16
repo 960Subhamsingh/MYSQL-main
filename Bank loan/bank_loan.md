@@ -103,4 +103,4 @@ how home ownership impacts loan application and disbursements.
 
 ## analytics Bank Data
 
-[Analysis](</Bank loan/Query Doc.pdf>)
+[Analysis](</Bank loan/Query.pdf>)
