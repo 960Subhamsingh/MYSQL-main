@@ -326,3 +326,9 @@ operators.
 **64. How do you safely remove a table named TableName only  if it exists?**
 
 **Answer:-** Drop table TableName if Exists;
+
+**Add auto Increment in the existing table and also enter  Not Null .**
+
+**Syntax:-** alter table Table_name modify Column_name datatype not null  auto_increment; 
+
+**Answer:-** alter table language modify id int not null  auto_increment;
