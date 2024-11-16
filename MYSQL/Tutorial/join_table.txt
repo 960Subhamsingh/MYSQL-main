@@ -1,0 +1,57 @@
+Combining two input tables in SQL can be done using several methods, depending on the desired result. Here are the most common approaches:
+
+1. JOINs
+INNER JOIN: Returns rows that have matching values in both tables.
+
+sql
+Copy code
+SELECT *
+FROM table1
+INNER JOIN table2 ON table1.common_column = table2.common_column;
+LEFT JOIN (or LEFT OUTER JOIN): Returns all rows from the left table, and the matched rows from the right table. If no match is found, NULLs are returned for columns from the right table.
+
+sql
+Copy code
+SELECT *
+FROM table1
+LEFT JOIN table2 ON table1.common_column = table2.common_column;
+RIGHT JOIN (or RIGHT OUTER JOIN): Similar to LEFT JOIN, but returns all rows from the right table.
+
+sql
+Copy code
+SELECT *
+FROM table1
+RIGHT JOIN table2 ON table1.common_column = table2.common_column;
+FULL OUTER JOIN: Returns rows when there is a match in one of the tables.
+
+sql
+Copy code
+SELECT *
+FROM table1
+FULL OUTER JOIN table2 ON table1.common_column = table2.common_column;
+2. UNION
+Combines the results of two or more SELECT statements. The tables must have the same number of columns and compatible data types.
+
+sql
+Copy code
+SELECT column1, column2
+FROM table1
+UNION
+SELECT column1, column2
+FROM table2;
+3. CROSS JOIN
+Produces a Cartesian product of the two tables, meaning every row from the first table is combined with every row from the second table.
+
+sql
+Copy code
+SELECT *
+FROM table1
+CROSS JOIN table2;
+Example Scenario
+If you have two tables, employees and departments, and you want to join them based on a common column (e.g., department_id), you could use:
+
+sql
+Copy code
+SELECT e.name, d.department_name
+FROM employees e
+INNER JOIN departments d ON e.department_id = d.id;

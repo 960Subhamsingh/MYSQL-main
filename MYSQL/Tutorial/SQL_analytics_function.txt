@@ -1,0 +1,55 @@
+some example of these RANK, DENSE_RANK, ROW_NUMBER SQL Analytical Functions Simplified
+ChatGPT said:
+ChatGPT
+Sure! Here’s a simplified overview of the SQL analytical functions RANK, DENSE_RANK, and ROW_NUMBER, along with examples for each.
+
+1. ROW_NUMBER()
+This function assigns a unique sequential integer to rows within a partition of a result set. Each row gets a unique number, regardless of ties.
+
+Example:
+
+sql
+Copy code
+SELECT 
+    employee_id,
+    salary,
+    ROW_NUMBER() OVER (ORDER BY salary DESC) AS row_num
+FROM 
+    employees;
+In this example, employees are ordered by their salary in descending order, and each employee is assigned a unique row number.
+
+2. RANK()
+This function assigns a rank to each row within a partition, with gaps in the ranking when there are ties. If two rows have the same value, they receive the same rank, and the next rank will skip accordingly.
+
+Example:
+
+sql
+Copy code
+SELECT 
+    employee_id,
+    salary,
+    RANK() OVER (ORDER BY salary DESC) AS rank
+FROM 
+    employees;
+Here, if two employees have the same salary, they receive the same rank, and the next rank will skip. For example, if two employees are ranked 1, the next rank will be 3.
+
+3. DENSE_RANK()
+This function is similar to RANK(), but it does not leave gaps in the ranking when there are ties. If two rows are tied, they receive the same rank, but the next rank will be the next consecutive integer.
+
+Example:
+
+sql
+Copy code
+SELECT 
+    employee_id,
+    salary,
+    DENSE_RANK() OVER (ORDER BY salary DESC) AS dense_rank
+FROM 
+    employees;
+In this case, if two employees have the same salary and are ranked 1, the next rank will be 2, without any gaps.
+
+Summary
+ROW_NUMBER(): Unique sequential number for each row.
+RANK(): Rank with gaps for ties.
+DENSE_RANK(): Rank without gaps for ties.
+These functions are useful for various analytical tasks, such as reporting and data analysis!
