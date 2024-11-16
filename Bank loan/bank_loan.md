@@ -100,3 +100,7 @@ of the primary reasons borrowers seek financing.
 6. Home Ownership Analysis (Tree Map): For a hierachical of 
 how home ownership impacts loan application and disbursements.
 
+
+## analysis Data
+
+[Analysis](</Bank loan/Query Doc.pdf>)
