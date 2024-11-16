@@ -101,6 +101,6 @@ of the primary reasons borrowers seek financing.
 how home ownership impacts loan application and disbursements.
 
 
-## analysis Data
+## analytics Bank Data
 
 [Analysis](</Bank loan/Query Doc.pdf>)
