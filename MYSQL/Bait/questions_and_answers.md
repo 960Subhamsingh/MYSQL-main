@@ -1,6 +1,6 @@
 # Clique Bait
 ## Questions and Answers
-### by jaime.m.shaker@gmail.com
+### by kumarsubham0734@gmail.com
 
 **1. Enterprise Relationship Diagram**
 

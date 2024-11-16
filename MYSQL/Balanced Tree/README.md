@@ -12,4 +12,4 @@ For this case study there is a total of 4 datasets for this case study - however
 - **product_prices**
 
 ## Entity Relationship Diagram
-![alt text](https://github.com/iweld/8-Week-SQL-Challenge/blob/main/Case%20Study%207%20-%20Balanced%20Tree/ERD.JPG)
+![ER Dig](</MYSQL/Balanced Tree/ERD.JPG>)

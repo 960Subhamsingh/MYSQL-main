@@ -1,6 +1,6 @@
 # Fresh Segments
 ## Questions and Answers
-### by jaime.m.shaker@gmail.com
+### by kumasubham0734@gmail.com
 
 **A.  Data Exploration and Cleansing**
 

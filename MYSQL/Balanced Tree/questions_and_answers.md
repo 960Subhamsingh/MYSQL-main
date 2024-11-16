@@ -1,6 +1,6 @@
 # Balanced Tree
 ## Questions and Answers
-### by jaime.m.shaker@gmail.com
+### by kumarsubham0734@gmail.com
 
 **A.  High Level Sales Analysis**
 

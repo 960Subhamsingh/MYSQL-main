@@ -1,6 +1,6 @@
 # Data Mart
 ## Questions and Answers
-### by jaime.m.shaker@gmail.com
+### by kumarsubham0734@gmail.com
 
 **A. Data Cleansing Steps**
 
