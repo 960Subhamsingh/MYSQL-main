@@ -1,6 +1,7 @@
 ## Add the time_of_day column
  - Display how many rows have morning , afternon, evening in the sales table  
 
+```
 mysql> SELECT   
 	time,   
 	(CASE   
@@ -25,6 +26,7 @@ FROM sales limit 10;
 | 20:18:00 | Evening     |  
 +----------+-------------+  
 10 rows in set (0.00 sec)  
+```
 
 - Add New column in exiting sales table   
 

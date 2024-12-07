@@ -49,10 +49,16 @@ working_hour int default 0,
 total_salary int default 0);
 
 -- insert data into users table
+
 insert into users values (101,'subham',8000,8, 90000);
 insert into users (user_id, name, per_hour_salary, working_hour) values (102,'kumar',6000,6);
+
 -- commit : save the statement
 commit;
+
+-- MySQL triggers
+Store Program which is automatically executed in response to specific events (insert , update, delete)
+
 
 -- create trigger 
 
@@ -78,6 +84,7 @@ on users for each row
 begin
 set NEW.total_salary = NEW.per_hour_salary * new.working_hour;
 end; //
+
 delimiter //
 
 -- update working_hour of user table 
